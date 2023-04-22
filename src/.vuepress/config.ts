@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
+import { searchPlugin } from '@vuepress/plugin-search';
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -22,6 +23,13 @@ export default defineUserConfig({
   plugins: [
     googleAnalyticsPlugin({
       id: "G-0QD3HGMX72"
+    }),
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索',
+        },
+      },
     }),
   ]
   // Enable it with pwa
