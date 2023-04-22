@@ -85,8 +85,12 @@ export default hopeTheme({
     blog: true,
 
     comment: {
-      // @ts-expect-error: You should generate and use your own comment service
       provider: "Giscus",
+      repo: "techstay/techblog",
+      repoId: "R_kgDOJZ7KHA",
+      category: "Announcements",
+      categoryId: "DIC_kwDOJZ7KHM4CV9lO",
+      mapping: "pathname",
     },
 
     // all features are enabled for demo, only preserve features you need here
