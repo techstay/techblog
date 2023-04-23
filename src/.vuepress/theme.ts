@@ -16,7 +16,7 @@ export default hopeTheme({
 
   repo: "techstay/techblog",
 
-  docsDir: "docs",
+  docsDir: "src",
 
   blog: {
     medias: {
