@@ -65,7 +65,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "易艾福G的技术博客",
 
       displayFooter: true,
 
