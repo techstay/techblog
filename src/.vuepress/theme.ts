@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://techblog.techstay.tech",
+  hostname: "https://techstay.tech",
 
   author: {
     name: "techstay",
@@ -70,7 +70,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "一个半吊子技术宅",
+        description: "喜欢研究技术的宅男一只",
         intro: "/intro.html",
       },
 
