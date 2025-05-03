@@ -54,7 +54,7 @@ export default hopeTheme({
     "/": {
       navbar: enNavbar,
       sidebar: enSidebar,
-      footer: "Techstay's tech blog",
+      footer: "Techstay's tech blog. Current Page Views: <span id='vercount_value_page_pv'>Loading</span>. Total Visits: <span id='vercount_value_site_pv'>Loading</span>. Total Visitors: <span id='vercount_value_site_uv'>Loading</span>.",
       displayFooter: true,
       blog: {
         description: "Techstay's tech blog.",
@@ -66,7 +66,7 @@ export default hopeTheme({
     "/zh/": {
       navbar: zhNavbar,
       sidebar: zhSidebar,
-      footer: "易艾福G的技术博客",
+      footer: "易艾福G的技术博客 本页访问: <span id='vercount_value_page_pv'>Loading</span>. 总站访问: <span id='vercount_value_site_pv'>Loading</span>. 总站访客: <span id='vercount_value_site_uv'>Loading</span>.",
       displayFooter: true,
       blog: {
         description: "懒人一个",
