@@ -13,7 +13,7 @@ export default hopeTheme({
   logo: "https://m.gettywallpapers.com/wp-content/uploads/2023/05/Cute-Anime-Avatar.jpg",
 
   repo: "techstay/techblog",
-
+  copyright: 'Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 4.0</a>',
   docsDir: "src",
 
   blog: {
