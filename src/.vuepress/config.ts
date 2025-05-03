@@ -1,6 +1,6 @@
-import { defineUserConfig } from "vuepress";
+import { viteBundler } from '@vuepress/bundler-vite';
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
-import { searchPlugin } from '@vuepress/plugin-search';
+import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -8,15 +8,15 @@ export default defineUserConfig({
 
   locales: {
     "/": {
+      lang: "en-US",
+      title: "Techstay's Tech Blog",
+      description: "My tech blog, focused on technology",
+    },
+    "/zh/": {
       lang: "zh-CN",
       title: "易艾福G的技术博客",
       description: "我的技术博客，专注于技术",
     },
-    // "/zh/": {
-    //   lang: "zh-CN",
-    //   title: "易艾福G的技术博客",
-    //   description: "我的技术博客，专注于技术",
-    // },
   },
 
   theme,
@@ -24,14 +24,13 @@ export default defineUserConfig({
     googleAnalyticsPlugin({
       id: "G-0QD3HGMX72"
     }),
-    searchPlugin({
-      locales: {
-        '/': {
-          placeholder: '搜索',
-        },
-      },
-    }),
-  ]
-  // Enable it with pwa
-  // shouldPrefetch: false,
+  ],
+
+  bundler: viteBundler({
+    viteOptions: {
+    },
+    vuePluginOptions: {},
+  }),
 });
+
+
