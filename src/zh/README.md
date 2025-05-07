@@ -1,7 +1,7 @@
 ---
 home: true
 layout: BlogHome
-icon: home
+icon: bxs:home
 title: 主页
 heroImage: https://m.gettywallpapers.com/wp-content/uploads/2023/05/Cute-Anime-Avatar.jpg
 heroText: 易艾福G的技术博客

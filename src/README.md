@@ -1,7 +1,7 @@
 ---
 home: true
 layout: BlogHome
-icon: home
+icon: bxs:home
 title: Home
 heroImage: https://m.gettywallpapers.com/wp-content/uploads/2023/05/Cute-Anime-Avatar.jpg
 heroText: Techstay's Blog

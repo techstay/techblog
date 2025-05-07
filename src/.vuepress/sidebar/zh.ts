@@ -5,13 +5,13 @@ export const zhSidebar = sidebar({
     "",
     {
       text: "教程",
-      icon: "speed",
+      icon: "material-symbols:school",
       prefix: "tutorials/",
       children: "structure"
     },
     {
       text: "文章",
-      icon: "blog",
+      icon: "mdi:blog-outline",
       prefix: "posts/",
       children: "structure",
     },

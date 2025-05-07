@@ -5,13 +5,13 @@ export const enSidebar = sidebar({
     "",
     {
       text: "Tutorials",
-      icon: "speed",
+      icon: "material-symbols:school",
       prefix: "tutorials/",
       children: "structure"
     },
     {
       text: "Posts",
-      icon: "blog",
+      icon: "mdi:blog-outline",
       prefix: "posts/",
       children: "structure",
     },
