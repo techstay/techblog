@@ -253,3 +253,5 @@ In Java, covariance is declared using `<? extends T>`, representing any type T o
 Typically, covariant parameters appear in the return position of functions, allowing the return of more specific types, while contravariant parameters appear in the parameter position of functions, accepting more general types.
 
 That’s all for the introduction to variance. Later, I’ll supplement this with generics and variance in other languages, which are also quite interesting.
+
+Java codes in this article could be found [here](https://github.com/techstay/study-notes/blob/main/java/java-samples/src/main/java/tech/techstay/generic/VarianceDemo.java).
