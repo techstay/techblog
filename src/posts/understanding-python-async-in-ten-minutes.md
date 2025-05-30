@@ -1,6 +1,6 @@
 ---
 category:
-  - programming
+  - python
 tag:
   - python
 date: 2025-05-09

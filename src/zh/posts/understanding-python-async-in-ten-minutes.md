@@ -1,6 +1,6 @@
 ---
 category:
-  - 编程
+  - python
 tag:
   - python
 date: 2025-05-09

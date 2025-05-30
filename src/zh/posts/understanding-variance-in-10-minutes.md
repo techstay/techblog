@@ -1,6 +1,6 @@
 ---
 category:
-  - 编程
+  - java
 tag:
   - java
 date: 2023-05-27
