@@ -3,7 +3,7 @@ category:
   - programming
 tag:
   - java
-date: 2025-05-07
+date: 2023-05-07
 ---
 
 # Understanding Covariance and Contravariance in Ten Minutes

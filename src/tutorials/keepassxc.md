@@ -3,7 +3,7 @@ category:
   - tutorials
 tag:
   - security
-date: 2025-05-30
+date: 2022-12-26
 ---
 
 # KeePassXC Password Manager

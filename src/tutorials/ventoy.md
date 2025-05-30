@@ -3,7 +3,7 @@ category:
   - tutorials
 tag:
   - windows
-date: 2025-05-07
+date: 2022-12-11
 ---
 
 # Using Ventoy to Create a Universal Bootable USB Drive

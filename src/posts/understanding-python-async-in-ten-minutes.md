@@ -1,3 +1,11 @@
+---
+category:
+  - programming
+tag:
+  - python
+date: 2025-05-09
+---
+
 # Understanding Python Asynchronous Programming in 10 Minutes
 
 Today, I'll introduce how to use asynchronous programming in Python. This article focuses on the usage of asynchronous programming, so it won't delve too much into underlying concepts.
