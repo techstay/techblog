@@ -6,7 +6,7 @@ tag:
 date: 2025-06-04
 ---
 
-# 🛠️ ContextMenuForWindows11
+# 🛠️ 用 ContextMenuForWindows11 修改右键菜单
 
 Windows 11 被人诟病的一点就是它的右键菜单，把原本的菜单功能拆分开来放到了二级菜单，导致操作更加繁琐。所以很多人都选择将右键菜单改回传统样式。不过也有人喜欢 Windows 11 的右键菜单，那么能不能直接在 Windows 11 右键菜单里添加项目呢？当然可以，这就是今天我要向大家介绍的[ContextMenuForWindows11](https://github.com/ikas-mc/ContextMenuForWindows11)，这个软件可以自定义 Windows 11 的右键菜单，将右键菜单设置为你想要的样子。
 
