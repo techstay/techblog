@@ -6,7 +6,7 @@ tag:
 date: 2023-05-07
 ---
 
-# Understanding Covariance and Contravariance in Ten Minutes
+# Understanding Covariance and Contravariance in 10 Minutes
 
 Variance is a concept in programming that is prone to mistakes. I used to have only a vague understanding of it, so this time I specifically looked up a lot of information online to thoroughly study the issue. I also took the opportunity to write a blog post introducing it, so that if I forget in the future, I can quickly recall it.
 
