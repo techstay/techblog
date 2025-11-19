@@ -1,6 +1,6 @@
 ---
 category:
-  - 软件
+  - 教程
 tag:
   - software
 date: 2025-08-14
