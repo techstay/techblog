@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "docs:update",
+      "problemMatcher": [],
+      "label": "npm: docs:update",
+      "detail": "pnpm dlx vp-update"
+    },
+    {
+      "type": "npm",
+      "script": "docs:dev",
+      "problemMatcher": [],
+      "label": "npm: docs:dev",
+      "detail": "vuepress dev src"
+    }
+  ]
+}
