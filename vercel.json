@@ -6,5 +6,6 @@
     }
   },
   "installCommand": "curl -sLJO https://github.com/sass/dart-sass/releases/download/1.104.0/dart-sass-1.104.0-linux-x64.tar.gz && tar -xf dart-sass-1.104.0-linux-x64.tar.gz && mv dart-sass bin && rm -f dart-sass-1.104.0-linux-x64.tar.gz",
-  "buildCommand": "export PATH=$PWD/bin:$PATH && hugo --gc --minify"
+  "buildCommand": "export PATH=$PWD/bin:$PATH && hugo --gc --minify",
+  "outputDirectory": "public"
 }
