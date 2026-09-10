@@ -1,0 +1,250 @@
+# Hugo + FixIt site config
+# Migrated from VuePress (vuepress-theme-hope) on 2026-09-11
+
+baseURL = "https://techstay.tech/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+theme = "FixIt"
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+hasCJKLanguage = false
+# root-level Hugo config (not params.*) — drives home page list, archives, related posts
+mainSections = ["posts", "tutorials"]
+
+[pagination]
+pagerSize = 6
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup]
+_merge = "shallow"
+
+# FixIt requires noClasses = false so its own chroma CSS
+# (github light + github-dark dark mode) can style code blocks
+[markup.highlight]
+codeFences = true
+noClasses = false
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = true
+
+[markup.goldmark]
+_merge = "shallow"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+# replicate theme defaults (theme [outputs] merge doesn't apply reliably)
+[outputs]
+home = ["html", "rss", "archives", "search", "offline", "manifest", "link"]
+page = ["html", "markdown"]
+section = ["html", "rss"]
+taxonomy = ["html"]
+term = ["html", "rss"]
+
+[params]
+# FixIt default keywords
+keywords = ["techstay", "blog", "技术博客"]
+
+[params.author]
+name = "techstay"
+link = "https://github.com/techstay"
+
+[params.app]
+title = "Techstay's Tech Blog"
+noFavicon = false
+svgFavicon = ""
+
+[params.busuanzi]
+enable = true
+source = "https://events.vercount.one/js"
+site_views = true
+page_views = true
+
+[params.analytics]
+enable = true
+
+[params.analytics.google]
+id = "G-0QD3HGMX72"
+anonymizeIP = true
+
+[params.comment]
+enable = true
+
+[params.comment.giscus]
+enable = true
+repo = "techstay/techblog"
+repoId = "R_kgDOJZ7KHA"
+category = "Announcements"
+categoryId = "DIC_kwDOJZ7KHM4CV9lO"
+mapping = "pathname"
+origin = "https://giscus.app"
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lightTheme = "light"
+darkTheme = "dark"
+lazyLoad = true
+
+[params.footer]
+enable = true
+copyright = true
+author = true
+since = "2020"
+license = 'Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">CC BY-NC-ND 4.0</a>'
+
+[params.footer.powered]
+enable = true
+hugo_logo = true
+theme_logo = true
+
+[params.home.posts]
+enable = true
+paginate = 6
+
+[params.social]
+Email = "lovery521@gmail.com"
+GitHub = "techstay"
+
+# ------------------------------ English (root) ------------------------------
+[languages.en]
+weight = 1
+locale = "en-US"
+label = "English"
+title = "Techstay's Tech Blog"
+contentDir = "content/en"
+
+[languages.en.params]
+description = "My tech blog, focused on technology"
+
+[params.home.profile]
+enable = true
+avatar_url = "https://m.gettywallpapers.com/wp-content/uploads/2023/05/Cute-Anime-Avatar.jpg"
+title = "Techstay's Blog"
+subtitle = "Revolutionizing life with technology."
+typeit = true
+social = true
+
+[[languages.en.menus.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[languages.en.menus.main.params]
+icon = "fa-solid fa-house"
+
+[[languages.en.menus.main]]
+identifier = "tutorials"
+name = "Tutorials"
+url = "/tutorials/"
+weight = 2
+[languages.en.menus.main.params]
+icon = "fa-solid fa-graduation-cap"
+
+[[languages.en.menus.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 3
+[languages.en.menus.main.params]
+icon = "fa-solid fa-blog"
+
+[[languages.en.menus.main]]
+identifier = "archives"
+name = "Archives"
+url = "archives/"
+weight = 4
+[languages.en.menus.main.params]
+icon = "fa-solid fa-archive"
+
+[[languages.en.menus.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 5
+[languages.en.menus.main.params]
+icon = "fa-solid fa-folder-tree"
+
+[[languages.en.menus.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 6
+[languages.en.menus.main.params]
+icon = "fa-solid fa-tags"
+
+# ------------------------------ 简体中文 (/zh/) ------------------------------
+[languages.zh]
+weight = 2
+locale = "zh-CN"
+label = "简体中文"
+title = "易艾福G的技术博客"
+contentDir = "content/zh"
+hasCJKLanguage = true
+
+[languages.zh.params]
+description = "我的技术博客，专注于技术"
+
+[languages.zh.params.home.profile]
+enable = true
+avatar_url = "https://m.gettywallpapers.com/wp-content/uploads/2023/05/Cute-Anime-Avatar.jpg"
+title = "易艾福G的技术博客"
+subtitle = "用技术改变生活"
+typeit = true
+social = true
+
+[languages.zh.params.comment.giscus]
+lang = "zh-CN"
+
+[[languages.zh.menus.main]]
+identifier = "home"
+name = "主页"
+url = "/zh/"
+weight = 1
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-house"
+
+[[languages.zh.menus.main]]
+identifier = "tutorials"
+name = "教程"
+url = "/zh/tutorials/"
+weight = 2
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-graduation-cap"
+
+[[languages.zh.menus.main]]
+identifier = "posts"
+name = "文章"
+url = "/zh/posts/"
+weight = 3
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-blog"
+
+[[languages.zh.menus.main]]
+identifier = "archives"
+name = "归档"
+url = "/zh/archives/"
+weight = 4
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-archive"
+
+[[languages.zh.menus.main]]
+identifier = "categories"
+name = "分类"
+url = "/zh/categories/"
+weight = 5
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-folder-tree"
+
+[[languages.zh.menus.main]]
+identifier = "tags"
+name = "标签"
+url = "/zh/tags/"
+weight = 6
+[languages.zh.menus.main.params]
+icon = "fa-solid fa-tags"
+
