@@ -6,6 +6,6 @@
     }
   },
   "installCommand": "curl -sLJO https://github.com/sass/dart-sass/releases/download/1.104.0/dart-sass-1.104.0-linux-x64.tar.gz && tar -xf dart-sass-1.104.0-linux-x64.tar.gz && mv dart-sass bin && rm -f dart-sass-1.104.0-linux-x64.tar.gz && npm ci",
-  "buildCommand": "export PATH=$PWD/bin:$PATH && hugo --gc --minify && if [ \"$VERCEL_ENV\" = \"production\" ] && [ -n \"$ALGOLIA_APP_ID\" ]; then ALGOLIA_INDEX_NAME=index.en ALGOLIA_INDEX_FILE=./public/search.json npm run algolia && ALGOLIA_INDEX_NAME=index.zh-cn ALGOLIA_INDEX_FILE=./public/zh/search.json npm run algolia; else echo '[algolia] skip index sync (not production or ALGOLIA_APP_ID unset)'; fi",
+  "buildCommand": "export PATH=$PWD/bin:$PATH && hugo --gc --minify && sh scripts/sync-algolia.sh",
   "outputDirectory": "public"
 }
