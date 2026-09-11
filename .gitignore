@@ -8,3 +8,11 @@ resources/
 
 # hugo build artifacts
 assets/jsconfig.json
+
+# node (atomic-algolia index sync)
+node_modules/
+# local Algolia credentials for `npm run algolia` (auto-loaded by atomic-algolia)
+.env
+
+.vercel
+.env*

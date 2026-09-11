@@ -1,0 +1,11 @@
+{
+  "name": "techblog",
+  "private": true,
+  "description": "Hugo + FixIt blog (index sync via atomic-algolia)",
+  "scripts": {
+    "algolia": "atomic-algolia"
+  },
+  "devDependencies": {
+    "atomic-algolia": "^0.3.19"
+  }
+}

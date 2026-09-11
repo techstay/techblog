@@ -110,6 +110,22 @@ paginate = 6
 Email = "lovery521@gmail.com"
 GitHub = "techstay"
 
+# Algolia search (https://fixit.lruihao.cn/zh-cn/guides/algolia-atomic/)
+[params.search]
+enable = true
+type = "algolia"
+content_length = 4000
+placeholder = ""
+max_result_length = 10
+snippet_length = 30
+highlight_tag = "em"
+absolute_url = false
+anchorify = true
+
+[params.search.algolia]
+app_id = "J6WF4RULX3"
+search_key = "459d08b3c8c0e7aed74bb0c611c6116a"
+
 # ------------------------------ English (root) ------------------------------
 [languages.en]
 weight = 1
@@ -120,6 +136,9 @@ contentDir = "content/en"
 
 [languages.en.params]
 description = "My tech blog, focused on technology"
+
+[languages.en.params.search.algolia]
+index = "index.en"
 
 [params.home.profile]
 enable = true
@@ -188,6 +207,9 @@ hasCJKLanguage = true
 
 [languages.zh.params]
 description = "我的技术博客，专注于技术"
+
+[languages.zh.params.search.algolia]
+index = "index.zh-cn"
 
 [languages.zh.params.home.profile]
 enable = true
